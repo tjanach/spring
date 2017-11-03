@@ -8,5 +8,9 @@
 		<constructor-arg index="0" value="Apple"></constructor-arg>
 	</bean>
 	<bean id="vegetable" class="com.example.demo.Vegetable"/>
+	
+	<bean id="vegWithName" class="com.example.demo.Vegetable">
+		<property name="myName" value="Brocolli"></property>
+	</bean>
 
 </beans>
