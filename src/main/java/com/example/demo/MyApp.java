@@ -15,10 +15,13 @@ public class MyApp {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("myTestPackage/appContext.xml");
 		
 		Fruit myFruit = appContext.getBean("fruit",Fruit.class);
+		Fruit myAnotherFruit = appContext.getBean("fruitWithName",Fruit.class);
 		Vegetable myWegetable = (Vegetable) appContext.getBean("vegetable");
 		
 		System.out.println(myFruit.talkAboutYourself());
 		System.out.println(myWegetable.talkAboutYourself());
+		System.out.println(myAnotherFruit.talkAboutYourself());
+		
 		
 	}
 }

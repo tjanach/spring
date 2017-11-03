@@ -4,6 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="fruit" class="com.example.demo.Fruit"/>
+	<bean id="fruitWithName" class="com.example.demo.Fruit">
+		<constructor-arg index="0" value="Apple"></constructor-arg>
+	</bean>
 	<bean id="vegetable" class="com.example.demo.Vegetable"/>
 
 </beans>
